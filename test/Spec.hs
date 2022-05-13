@@ -2,6 +2,8 @@ import Lib
 
 import Data.Char (isPunctuation)
 import Test.QuickCheck
+import Test.QuickCheck.Instances
+import Data.Text as T
 
 assert :: Bool -> String -> String -> IO ()
 assert test passStatement failStatement = if test
